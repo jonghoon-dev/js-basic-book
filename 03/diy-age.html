@@ -10,5 +10,14 @@
 <body>	
 	<button class="btn" onclick="calc()">나이 계산하기</button>
 	<div id="result" class="show">(결과 값 표시)</div> 
+	<script>
+		calc = () => {
+			const birth = prompt("당신의 생일은?","YYYY");
+			const year = prompt("올해의 연도는?", "YYYY")
+			const age = year - birth + 1;
+			document.querySelector("#result").innerHTML = age
+			alert(age);
+		}
+	</script>
 </body>
 </html>
